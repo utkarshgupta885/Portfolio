@@ -1,0 +1,94 @@
+body
+{
+    background-color: #332c2c;
+    color: azure;
+}
+
+.container
+{
+    display: flex;
+    border:solid white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    color: aliceblue;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-image: url('utkarsh_crop.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* Add this to your styles.css file */
+
+.typing-effect {
+    font-family: monospace; /* Gives a typewriter feel */
+    border-right: 2px solid white; /* This creates the cursor */
+    display: flex; /* Makes the border stay at the end of the text */
+    white-space: nowrap; /* Prevents the text from wrapping */
+    overflow: hidden; /* Hides the text until it's "typed" */
+    text-align: center;
+    color: azure;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-top:30px;
+    font-size: 60px;
+    animation: 
+        blinkCursor .5s step-end infinite;
+}
+
+/* The blinking cursor animation */
+@keyframes blinkCursor {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+}
+
+p{
+    padding-top: 30px;
+}
+h2{
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.desc,h2,p,.card-container ,.card-container div,.social-container div,.social-container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 37px;
+    color: azure;
+}
+.desc{
+    padding-bottom: 40px;
+}
+.card-container {
+    display: flex;
+    flex-direction: column;
+}
+.card-container div{
+    width: 500px;
+    background-color: aqua;
+    padding: 50px;
+    margin: 20px;
+}
+
+.social-container{
+    display: flex;
+    flex-direction: row;
+}
+.social-container div{
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin: 15px;
+    justify-content: space-between;
+}
